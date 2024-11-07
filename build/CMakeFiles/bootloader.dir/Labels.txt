@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/mung/Documents/datn/http_request/build/CMakeFiles/bootloader
+/home/mung/Documents/datn/http_request/build/CMakeFiles/bootloader.rule
+/home/mung/Documents/datn/http_request/build/CMakeFiles/bootloader-complete.rule
+/home/mung/Documents/datn/http_request/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/mung/Documents/datn/http_request/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/mung/Documents/datn/http_request/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/mung/Documents/datn/http_request/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/mung/Documents/datn/http_request/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/mung/Documents/datn/http_request/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/mung/Documents/datn/http_request/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
