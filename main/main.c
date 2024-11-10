@@ -2,27 +2,29 @@
 #include <string.h>
 #include <stdlib.h>
 #include "adc.h"
-//#include "thingsboard.h"
 #include "wifi.h"
 #include "Timestamp.h"
+#include "thingsboard.h"
 
-void app_main(void) {
+
+QueueHandle_t queue;
+void app_main() {
+    // Kết nối WiFi và cấu hình thời gian
     connect_to_wifi();
     initialize_sntp();
     wait_for_time();
+    
+    // Khởi tạo ADC
     init_adc();
 
-    // Declare adc_values as a 2D array with correct dimensions
-    int adc_values[5][NUM_READINGS];
-    
-    while (1) {
-        // Read ADC values into the 2D array
-        read_adc_values(adc_values);
-        
-        // Print the ADC values as JSON (assuming print_adc_values is updated to accept adc_values)
-        print_adc_values(adc_values);
+    // Tạo hàng đợi (queue) để truyền dữ liệu giữa các task
+    // queue = xQueueCreate(10, sizeof(int));  // Tạo queue chứa tối đa 10 phần tử, mỗi phần tử là int
+    // if (queue == NULL) {
+    //     printf("Không thể tạo queue\n");
+    //     return;
+    // }
 
-        // Delay for 1000 ms (1 second)
-        vTaskDelay(pdMS_TO_TICKS(100));
-    }
-    }
+    // Tạo 2 task: đọc ADC và in giá trị
+    xTaskCreatePinnedToCore(adc_task, "adc_task", 6000, NULL, 1, NULL, 0);
+    xTaskCreatePinnedToCore(send_to_thingsboard, "print_task",6000, NULL, 1, NULL, 1);
+}

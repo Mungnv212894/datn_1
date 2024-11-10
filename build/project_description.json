@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "http_request",
-    "project_version":    "1",
+    "project_version":    "634666d-dirty",
     "project_path":       "/home/mung/Documents/datn/http_request",
     "idf_path":           "/home/mung/esp/esp-idf",
     "build_dir":          "/home/mung/Documents/datn/http_request/build",
@@ -805,7 +805,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [ "protocol_examples_common" ],
             "file": "/home/mung/Documents/datn/http_request/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/mung/Documents/datn/http_request/main/main.c", "/home/mung/Documents/datn/http_request/lib/wifi.c", "/home/mung/Documents/datn/http_request/lib/adc.c", "/home/mung/Documents/datn/http_request/lib/Timestamp.c" ],
+            "sources": [ "/home/mung/Documents/datn/http_request/main/main.c", "/home/mung/Documents/datn/http_request/lib/wifi.c", "/home/mung/Documents/datn/http_request/lib/adc.c", "/home/mung/Documents/datn/http_request/lib/Timestamp.c", "/home/mung/Documents/datn/http_request/lib/thingsboard" ],
             "include_dirs": [ ".", "../lib" ]
         },
         "mbedtls": {

@@ -61,17 +61,38 @@ int http_post_json_handle(char *payload) {
     return (err == ESP_OK) ? 0 : 1;
 }
 
-void send_to_thingsboard(int adc_values[5]) {
-    char *payload = create_json_body(adc_values);
-    if (payload) {
-        ESP_LOGI(TAG_HTTP_POST, "Sending JSON: %s", payload);
-        if (http_post_json_handle(payload) == 0) {
-           // ESP_LOGI(TAG_HTTP_POST, "Data sent successfully");
-        } else {
-            ESP_LOGE(TAG_HTTP_POST, "Failed to send data");
+void send_to_thingsboard(void *pvParameters) {
+    // Kiểm tra queue đã được tạo trong adc_task
+   if (!queue)
+        queue = xQueueCreate(ITEMS_NUM, ITEM_SIZE);
+
+    
+    char rxbuff[700];
+    while (1) {
+        if (xQueueReceive(queue, &rxbuff, (TickType_t)1)) {
+            if (http_post_json_handle(rxbuff) == 0) {
+                ESP_LOGI(TAG_HTTP_POST, "Data sent successfully");
+                //printf("%s\n",rxbuff);
+            } else {
+                ESP_LOGE(TAG_HTTP_POST, "Failed to send data");
+            }
         }
-        free(payload);  // Giải phóng bộ nhớ
-    } else {
-        ESP_LOGE(TAG_HTTP_POST, "Failed to create JSON payload");
     }
 }
+
+// void print_task(void *pvParameters) {
+//     // Đảm bảo queue được khởi tạo an toàn trong app_main
+//     if (!queue) {
+//         queue = xQueueCreate(ITEMS_NUM, ITEM_SIZE);  // Tạo queue
+//     }
+
+//     char rxbuff[700];  // Mảng chứa dữ liệu nhận
+
+//     while (1) {
+//         // Thay vì sử dụng (TickType_t)1, sử dụng portMAX_DELAY để chờ đợi vô thời hạn nếu cần
+//         if (xQueueReceive(queue, &rxbuff, portMAX_DELAY)) {
+//             // In dữ liệu nhận từ queue
+//             printf("%s", rxbuff);
+//         }
+//     }
+// }

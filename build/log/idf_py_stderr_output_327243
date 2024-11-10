@@ -1,0 +1,235 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400817f6: panic_abort at /home/mung/esp/esp-idf/components/esp_system/panic.c:466
+0x40089461: esp_system_abort at /home/mung/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090ae9: __assert_func at /home/mung/esp/esp-idf/components/newlib/assert.c:81
+0x4008218d: heap_caps_free at /home/mung/esp/esp-idf/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40090b19: free at /home/mung/esp/esp-idf/components/newlib/heap.c:39
+0x400d6df5: print_task at /home/mung/Documents/datn/http_request/lib/adc.c:111
+0x40089fad: vPortTaskWrapper at /home/mung/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

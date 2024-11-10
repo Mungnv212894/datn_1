@@ -1,0 +1,632 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 10 2024 00:00:11[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24e1ch (151068) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=00034e44 vaddr=3ffb0000 size=03d5ch ( 15708) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=00038ba8 vaddr=40080000 size=07470h ( 29808) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a4444h (672836) map[0m
+[0;32mI (405) esp_image: segment 4: paddr=000e446c vaddr=40087470 size=0f700h ( 63232) load[0m
+[0;32mI (441) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (441) boot: Disabling RNG early entropy source...[0m
+[0;32mI (453) cpu_start: Multicore app[0m
+[0;32mI (462) cpu_start: Pro cpu start user code[0m
+[0;32mI (462) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (462) cpu_start: Application information:[0m
+[0;32mI (465) cpu_start: Project name:     http_request[0m
+[0;32mI (470) cpu_start: App version:      634666d-dirty[0m
+[0;32mI (476) cpu_start: Compile time:     Nov  9 2024 23:59:44[0m
+[0;32mI (482) cpu_start: ELF file SHA256:  1dbf57a00...[0m
+[0;32mI (487) cpu_start: ESP-IDF:          v5.2.3[0m
+[0;32mI (492) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (497) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (502) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (507) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (514) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (520) heap_init: At 3FFB8480 len 00027B80 (158 KiB): DRAM[0m
+[0;32mI (526) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (532) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (539) heap_init: At 40096B70 len 00009490 (37 KiB): IRAM[0m
+[0;32mI (547) spi_flash: detected chip: generic[0m
+[0;32mI (550) spi_flash: flash io: dio[0m
+[0;33mW (554) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (563) main_task: Started on CPU0[0m
+[0;32mI (573) main_task: Calling app_main()[0m
+[0;32mI (603) wifi:wifi driver task: 3ffc0490, prio:23, stack:6656, core=0[0m
+[0;32mI (613) wifi:wifi firmware version: 82f54d2[0m
+[0;32mI (613) wifi:wifi certification version: v7.0[0m
+[0;32mI (613) wifi:config NVS flash: enabled[0m
+[0;32mI (613) wifi:config nano formating: disabled[0m
+[0;32mI (613) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (623) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (623) wifi:Init management short buffer num: 32[0m
+[0;32mI (633) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (633) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (643) wifi:Init static rx buffer num: 10[0m
+[0;32mI (643) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (643) wifi_init: rx ba win: 6[0m
+[0;32mI (653) wifi_init: tcpip mbox: 32[0m
+[0;32mI (653) wifi_init: udp mbox: 6[0m
+[0;32mI (653) wifi_init: tcp mbox: 6[0m
+[0;32mI (663) wifi_init: tcp tx win: 5760[0m
+[0;32mI (663) wifi_init: tcp rx win: 5760[0m
+[0;32mI (673) wifi_init: tcp mss: 1440[0m
+[0;32mI (673) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (683) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (683) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (693) phy_init: phy_version 4840,a40f0ac,Aug 16 2024,16:48:06[0m
+[0;32mI (773) wifi:mode : sta (cc:db:a7:49:f1:e4)[0m
+[0;32mI (773) wifi:enable tsf[0m
+[0;32mI (773) wifi_connect: wifi_init_sta finished.[0m
+[0;32mI (773) timestamp: Initializing SNTP[0m
+Waiting for time set...
+[0;32mI (783) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (783) wifi:state: init -> auth (b0)[0m
+[0;32mI (803) wifi:state: auth -> assoc (0)[0m
+[0;32mI (823) wifi:state: assoc -> run (10)[0m
+[0;32mI (843) wifi:connected with T3, aid = 3, channel 1, BW20, bssid = e8:65:d4:78:22:78[0m
+[0;32mI (843) wifi:security: WPA2-PSK, phy: bgn, rssi: -40[0m
+[0;32mI (843) wifi:pm start, type: 1[0m
+
+[0;32mI (843) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (853) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (863) wifi:<ba-add>idx:0 (ifx:0, e8:65:d4:78:22:78), tid:0, ssn:2, winSize:64[0m
+Waiting for time set...
+Waiting for time set...
+Waiting for time set...
+[0;32mI (3863) esp_netif_handlers: sta ip: 192.168.0.101, mask: 255.255.255.0, gw: 192.168.0.1[0m
+Waiting for time set...
+[0;32mI (5593) timestamp: Notification of a time synchronization event[0m
+[0;32mI (5783) main_task: Returned from app_main()[0m
+[0;32mI (6863) wifi:<ba-add>idx:1 (ifx:0, e8:65:d4:78:22:78), tid:3, ssn:0, winSize:64[0m
+[0;32mI (7413) HTTP_POST: Data sent successfully[0m
+[0;32mI (7783) HTTP_POST: Data sent successfully[0m
+[0;32mI (8333) HTTP_POST: Data sent successfully[0m
+[0;32mI (8653) HTTP_POST: Data sent successfully[0m
+[0;32mI (8853) HTTP_POST: Data sent successfully[0m
+[0;32mI (9153) HTTP_POST: Data sent successfully[0m
+[0;32mI (9463) HTTP_POST: Data sent successfully[0m
+[0;32mI (9773) HTTP_POST: Data sent successfully[0m
+[0;32mI (10073) HTTP_POST: Data sent successfully[0m
+[0;32mI (10283) HTTP_POST: Data sent successfully[0m
+[0;32mI (10593) HTTP_POST: Data sent successfully[0m
+[0;32mI (10903) HTTP_POST: Data sent successfully[0m
+[0;32mI (11203) HTTP_POST: Data sent successfully[0m
+[0;32mI (12953) HTTP_POST: Data sent successfully[0m
+[0;32mI (13253) HTTP_POST: Data sent successfully[0m
+[0;32mI (13453) HTTP_POST: Data sent successfully[0m
+[0;32mI (13763) HTTP_POST: Data sent successfully[0m
+[0;32mI (14073) HTTP_POST: Data sent successfully[0m
+[0;32mI (14373) HTTP_POST: Data sent successfully[0m
+[0;32mI (14683) HTTP_POST: Data sent successfully[0m
+[0;32mI (14893) HTTP_POST: Data sent successfully[0m
+[0;32mI (15193) HTTP_POST: Data sent successfully[0m
+[0;32mI (15403) HTTP_POST: Data sent successfully[0m
+[0;32mI (15713) HTTP_POST: Data sent successfully[0m
+[0;32mI (16023) HTTP_POST: Data sent successfully[0m
+[0;32mI (16323) HTTP_POST: Data sent successfully[0m
+[0;32mI (16533) HTTP_POST: Data sent successfully[0m
+[0;32mI (16833) HTTP_POST: Data sent successfully[0m
+[0;32mI (17043) HTTP_POST: Data sent successfully[0m
+[0;32mI (17353) HTTP_POST: Data sent successfully[0m
+[0;32mI (17863) HTTP_POST: Data sent successfully[0m
+[0;32mI (18063) HTTP_POST: Data sent successfully[0m
+[0;32mI (18373) HTTP_POST: Data sent successfully[0m
+[0;32mI (18683) HTTP_POST: Data sent successfully[0m
+[0;32mI (18983) HTTP_POST: Data sent successfully[0m
+[0;32mI (19293) HTTP_POST: Data sent successfully[0m
+[0;32mI (19603) HTTP_POST: Data sent successfully[0m
+[0;32mI (19803) HTTP_POST: Data sent successfully[0m
+[0;32mI (20093) HTTP_POST: Data sent successfully[0m
+[0;32mI (20313) HTTP_POST: Data sent successfully[0m
+[0;32mI (20523) HTTP_POST: Data sent successfully[0m
+[0;32mI (20833) HTTP_POST: Data sent successfully[0m
+[0;32mI (21143) HTTP_POST: Data sent successfully[0m
+[0;32mI (21353) HTTP_POST: Data sent successfully[0m
+[0;32mI (21653) HTTP_POST: Data sent successfully[0m
+[0;32mI (21953) HTTP_POST: Data sent successfully[0m
+[0;32mI (22263) HTTP_POST: Data sent successfully[0m
+[0;32mI (22643) HTTP_POST: Data sent successfully[0m
+[0;32mI (22983) HTTP_POST: Data sent successfully[0m
+[0;32mI (23283) HTTP_POST: Data sent successfully[0m
+[0;32mI (23593) HTTP_POST: Data sent successfully[0m
+[0;32mI (23903) HTTP_POST: Data sent successfully[0m
+[0;32mI (24103) HTTP_POST: Data sent successfully[0m
+[0;32mI (24413) HTTP_POST: Data sent successfully[0m
+[0;32mI (24723) HTTP_POST: Data sent successfully[0m
+[0;32mI (25023) HTTP_POST: Data sent successfully[0m
+[0;32mI (25333) HTTP_POST: Data sent successfully[0m
+[0;32mI (25643) HTTP_POST: Data sent successfully[0m
+[0;32mI (25953) HTTP_POST: Data sent successfully[0m
+[0;32mI (26133) HTTP_POST: Data sent successfully[0m
+[0;32mI (26363) HTTP_POST: Data sent successfully[0m
+[0;32mI (26663) HTTP_POST: Data sent successfully[0m
+[0;32mI (26973) HTTP_POST: Data sent successfully[0m
+[0;32mI (27183) HTTP_POST: Data sent successfully[0m
+[0;32mI (27483) HTTP_POST: Data sent successfully[0m
+[0;32mI (27893) HTTP_POST: Data sent successfully[0m
+[0;32mI (28203) HTTP_POST: Data sent successfully[0m
+[0;32mI (28513) HTTP_POST: Data sent successfully[0m
+[0;32mI (28713) HTTP_POST: Data sent successfully[0m
+[0;32mI (29023) HTTP_POST: Data sent successfully[0m
+[0;32mI (29223) HTTP_POST: Data sent successfully[0m
+[0;32mI (29533) HTTP_POST: Data sent successfully[0m
+[0;32mI (29843) HTTP_POST: Data sent successfully[0m
+[0;32mI (30093) HTTP_POST: Data sent successfully[0m
+[0;32mI (30353) HTTP_POST: Data sent successfully[0m
+[0;32mI (30553) HTTP_POST: Data sent successfully[0m
+[0;32mI (30863) HTTP_POST: Data sent successfully[0m
+[0;32mI (31173) HTTP_POST: Data sent successfully[0m
+[0;32mI (31483) HTTP_POST: Data sent successfully[0m
+[0;32mI (31783) HTTP_POST: Data sent successfully[0m
+[0;32mI (31993) HTTP_POST: Data sent successfully[0m
+[0;32mI (32313) HTTP_POST: Data sent successfully[0m
+[0;32mI (32813) HTTP_POST: Data sent successfully[0m
+[0;32mI (33013) HTTP_POST: Data sent successfully[0m
+[0;32mI (33223) HTTP_POST: Data sent successfully[0m
+[0;32mI (33423) HTTP_POST: Data sent successfully[0m
+[0;32mI (33633) HTTP_POST: Data sent successfully[0m
+[0;32mI (33933) HTTP_POST: Data sent successfully[0m
+[0;32mI (34243) HTTP_POST: Data sent successfully[0m
+[0;32mI (34553) HTTP_POST: Data sent successfully[0m
+[0;32mI (34863) HTTP_POST: Data sent successfully[0m
+[0;32mI (35093) HTTP_POST: Data sent successfully[0m
+[0;32mI (35373) HTTP_POST: Data sent successfully[0m
+[0;32mI (35673) HTTP_POST: Data sent successfully[0m
+[0;32mI (36013) HTTP_POST: Data sent successfully[0m
+[0;32mI (36403) HTTP_POST: Data sent successfully[0m
+[0;32mI (36703) HTTP_POST: Data sent successfully[0m
+[0;32mI (37013) HTTP_POST: Data sent successfully[0m
+[0;32mI (37643) HTTP_POST: Data sent successfully[0m
+[0;32mI (38033) HTTP_POST: Data sent successfully[0m
+[0;32mI (38343) HTTP_POST: Data sent successfully[0m
+[0;32mI (38643) HTTP_POST: Data sent successfully[0m
+[0;32mI (38953) HTTP_POST: Data sent successfully[0m
+[0;32mI (39163) HTTP_POST: Data sent successfully[0m
+[0;32mI (39463) HTTP_POST: Data sent successfully[0m
+[0;32mI (39773) HTTP_POST: Data sent successfully[0m
+[0;32mI (39983) HTTP_POST: Data sent successfully[0m
+[0;32mI (40283) HTTP_POST: Data sent successfully[0m
+[0;32mI (40493) HTTP_POST: Data sent successfully[0m
+[0;32mI (40793) HTTP_POST: Data sent successfully[0m
+[0;32mI (41003) HTTP_POST: Data sent successfully[0m
+[0;32mI (41313) HTTP_POST: Data sent successfully[0m
+[0;32mI (41513) HTTP_POST: Data sent successfully[0m
+[0;32mI (41823) HTTP_POST: Data sent successfully[0m
+[0;32mI (42023) HTTP_POST: Data sent successfully[0m
+[0;32mI (42253) HTTP_POST: Data sent successfully[0m
+[0;32mI (42783) HTTP_POST: Data sent successfully[0m
+[0;32mI (43153) HTTP_POST: Data sent successfully[0m
+[0;32mI (43363) HTTP_POST: Data sent successfully[0m
+[0;32mI (43563) HTTP_POST: Data sent successfully[0m
+[0;32mI (43873) HTTP_POST: Data sent successfully[0m
+[0;32mI (44173) HTTP_POST: Data sent successfully[0m
+[0;32mI (44483) HTTP_POST: Data sent successfully[0m
+[0;32mI (44693) HTTP_POST: Data sent successfully[0m
+[0;32mI (45003) HTTP_POST: Data sent successfully[0m
+[0;32mI (45303) HTTP_POST: Data sent successfully[0m
+[0;32mI (45513) HTTP_POST: Data sent successfully[0m
+[0;32mI (45813) HTTP_POST: Data sent successfully[0m
+[0;32mI (46123) HTTP_POST: Data sent successfully[0m
+[0;32mI (46433) HTTP_POST: Data sent successfully[0m
+[0;32mI (46733) HTTP_POST: Data sent successfully[0m
+[0;32mI (46943) HTTP_POST: Data sent successfully[0m
+[0;32mI (47143) HTTP_POST: Data sent successfully[0m
+[0;32mI (47463) HTTP_POST: Data sent successfully[0m
+[0;32mI (47773) HTTP_POST: Data sent successfully[0m
+[0;32mI (48073) HTTP_POST: Data sent successfully[0m
+[0;32mI (48373) HTTP_POST: Data sent successfully[0m
+[0;32mI (48683) HTTP_POST: Data sent successfully[0m
+[0;32mI (48993) HTTP_POST: Data sent successfully[0m
+[0;32mI (49293) HTTP_POST: Data sent successfully[0m
+[0;32mI (49613) HTTP_POST: Data sent successfully[0m
+[0;32mI (49913) HTTP_POST: Data sent successfully[0m
+[0;32mI (50223) HTTP_POST: Data sent successfully[0m
+[0;32mI (50523) HTTP_POST: Data sent successfully[0m
+[0;32mI (50733) HTTP_POST: Data sent successfully[0m
+[0;32mI (51043) HTTP_POST: Data sent successfully[0m
+[0;32mI (51243) HTTP_POST: Data sent successfully[0m
+[0;32mI (51393) HTTP_POST: Data sent successfully[0m
+[0;32mI (51653) HTTP_POST: Data sent successfully[0m
+[0;32mI (51963) HTTP_POST: Data sent successfully[0m
+[0;32mI (52173) HTTP_POST: Data sent successfully[0m
+[0;32mI (52573) HTTP_POST: Data sent successfully[0m
+[0;32mI (52883) HTTP_POST: Data sent successfully[0m
+[0;32mI (53193) HTTP_POST: Data sent successfully[0m
+[0;32mI (53493) HTTP_POST: Data sent successfully[0m
+[0;32mI (53703) HTTP_POST: Data sent successfully[0m
+[0;32mI (53903) HTTP_POST: Data sent successfully[0m
+[0;32mI (54213) HTTP_POST: Data sent successfully[0m
+[0;32mI (54523) HTTP_POST: Data sent successfully[0m
+[0;32mI (54833) HTTP_POST: Data sent successfully[0m
+[0;32mI (55133) HTTP_POST: Data sent successfully[0m
+[0;32mI (55343) HTTP_POST: Data sent successfully[0m
+[0;32mI (55643) HTTP_POST: Data sent successfully[0m
+[0;32mI (55953) HTTP_POST: Data sent successfully[0m
+[0;32mI (56263) HTTP_POST: Data sent successfully[0m
+[0;32mI (56563) HTTP_POST: Data sent successfully[0m
+[0;32mI (56873) HTTP_POST: Data sent successfully[0m
+[0;32mI (57193) HTTP_POST: Data sent successfully[0m
+[0;32mI (57493) HTTP_POST: Data sent successfully[0m
+[0;32mI (58013) HTTP_POST: Data sent successfully[0m
+[0;32mI (58313) HTTP_POST: Data sent successfully[0m
+[0;32mI (58613) HTTP_POST: Data sent successfully[0m
+[0;32mI (58923) HTTP_POST: Data sent successfully[0m
+[0;32mI (59233) HTTP_POST: Data sent successfully[0m
+[0;32mI (59533) HTTP_POST: Data sent successfully[0m
+[0;32mI (59843) HTTP_POST: Data sent successfully[0m
+[0;32mI (60153) HTTP_POST: Data sent successfully[0m
+[0;32mI (60463) HTTP_POST: Data sent successfully[0m
+[0;32mI (60763) HTTP_POST: Data sent successfully[0m
+[0;32mI (61073) HTTP_POST: Data sent successfully[0m
+[0;32mI (61383) HTTP_POST: Data sent successfully[0m
+[0;32mI (61583) HTTP_POST: Data sent successfully[0m
+[0;32mI (61893) HTTP_POST: Data sent successfully[0m
+[0;32mI (62103) HTTP_POST: Data sent successfully[0m
+[0;32mI (62523) HTTP_POST: Data sent successfully[0m
+[0;32mI (62933) HTTP_POST: Data sent successfully[0m
+[0;32mI (63223) HTTP_POST: Data sent successfully[0m
+[0;32mI (63533) HTTP_POST: Data sent successfully[0m
+[0;32mI (63833) HTTP_POST: Data sent successfully[0m
+[0;32mI (64143) HTTP_POST: Data sent successfully[0m
+[0;32mI (64453) HTTP_POST: Data sent successfully[0m
+[0;32mI (64653) HTTP_POST: Data sent successfully[0m
+[0;32mI (64963) HTTP_POST: Data sent successfully[0m
+[0;32mI (65173) HTTP_POST: Data sent successfully[0m
+[0;32mI (65473) HTTP_POST: Data sent successfully[0m
+[0;32mI (65783) HTTP_POST: Data sent successfully[0m
+[0;32mI (66003) HTTP_POST: Data sent successfully[0m
+[0;32mI (66203) HTTP_POST: Data sent successfully[0m
+[0;32mI (66503) HTTP_POST: Data sent successfully[0m
+[0;32mI (66653) HTTP_POST: Data sent successfully[0m
+[0;32mI (67013) HTTP_POST: Data sent successfully[0m
+[0;32mI (67323) HTTP_POST: Data sent successfully[0m
+[0;32mI (67633) HTTP_POST: Data sent successfully[0m
+[0;32mI (68033) HTTP_POST: Data sent successfully[0m
+[0;32mI (68343) HTTP_POST: Data sent successfully[0m
+[0;32mI (68553) HTTP_POST: Data sent successfully[0m
+[0;32mI (68853) HTTP_POST: Data sent successfully[0m
+[0;32mI (69063) HTTP_POST: Data sent successfully[0m
+[0;32mI (69363) HTTP_POST: Data sent successfully[0m
+[0;32mI (69673) HTTP_POST: Data sent successfully[0m
+[0;32mI (69993) HTTP_POST: Data sent successfully[0m
+[0;32mI (70323) HTTP_POST: Data sent successfully[0m
+[0;32mI (70593) HTTP_POST: Data sent successfully[0m
+[0;32mI (70803) HTTP_POST: Data sent successfully[0m
+[0;32mI (71093) HTTP_POST: Data sent successfully[0m
+[0;32mI (71313) HTTP_POST: Data sent successfully[0m
+[0;32mI (71623) HTTP_POST: Data sent successfully[0m
+[0;32mI (71923) HTTP_POST: Data sent successfully[0m
+[0;32mI (72373) HTTP_POST: Data sent successfully[0m
+[0;32mI (72853) HTTP_POST: Data sent successfully[0m
+[0;32mI (73153) HTTP_POST: Data sent successfully[0m
+[0;32mI (73463) HTTP_POST: Data sent successfully[0m
+[0;32mI (73673) HTTP_POST: Data sent successfully[0m
+[0;32mI (73973) HTTP_POST: Data sent successfully[0m
+[0;32mI (74283) HTTP_POST: Data sent successfully[0m
+[0;32mI (74493) HTTP_POST: Data sent successfully[0m
+[0;32mI (74793) HTTP_POST: Data sent successfully[0m
+[0;32mI (75003) HTTP_POST: Data sent successfully[0m
+[0;32mI (75303) HTTP_POST: Data sent successfully[0m
+[0;32mI (75823) HTTP_POST: Data sent successfully[0m
+[0;32mI (76123) HTTP_POST: Data sent successfully[0m
+[0;32mI (76443) HTTP_POST: Data sent successfully[0m
+[0;32mI (76743) HTTP_POST: Data sent successfully[0m
+[0;32mI (76943) HTTP_POST: Data sent successfully[0m
+[0;32mI (77263) HTTP_POST: Data sent successfully[0m
+[0;32mI (77593) HTTP_POST: Data sent successfully[0m
+[0;32mI (77933) HTTP_POST: Data sent successfully[0m
+[0;32mI (79403) HTTP_POST: Data sent successfully[0m
+[0;32mI (79713) HTTP_POST: Data sent successfully[0m
+[0;32mI (80023) HTTP_POST: Data sent successfully[0m
+[0;32mI (80223) HTTP_POST: Data sent successfully[0m
+[0;32mI (80533) HTTP_POST: Data sent successfully[0m
+[0;32mI (80673) HTTP_POST: Data sent successfully[0m
+[0;32mI (81043) HTTP_POST: Data sent successfully[0m
+[0;32mI (81243) HTTP_POST: Data sent successfully[0m
+[0;32mI (81553) HTTP_POST: Data sent successfully[0m
+[0;32mI (81763) HTTP_POST: Data sent successfully[0m
+[0;32mI (82063) HTTP_POST: Data sent successfully[0m
+[0;32mI (82293) HTTP_POST: Data sent successfully[0m
+[0;32mI (82753) HTTP_POST: Data sent successfully[0m
+[0;32mI (83103) HTTP_POST: Data sent successfully[0m
+[0;32mI (83803) HTTP_POST: Data sent successfully[0m
+[0;32mI (84323) HTTP_POST: Data sent successfully[0m
+[0;32mI (84623) HTTP_POST: Data sent successfully[0m
+[0;32mI (84833) HTTP_POST: Data sent successfully[0m
+[0;32mI (85143) HTTP_POST: Data sent successfully[0m
+[0;32mI (85443) HTTP_POST: Data sent successfully[0m
+[0;32mI (85753) HTTP_POST: Data sent successfully[0m
+[0;32mI (85953) HTTP_POST: Data sent successfully[0m
+[0;32mI (86263) HTTP_POST: Data sent successfully[0m
+[0;32mI (86473) HTTP_POST: Data sent successfully[0m
+[0;32mI (86773) HTTP_POST: Data sent successfully[0m
+[0;32mI (86983) HTTP_POST: Data sent successfully[0m
+[0;32mI (87303) HTTP_POST: Data sent successfully[0m
+[0;32mI (87603) HTTP_POST: Data sent successfully[0m
+[0;32mI (88313) HTTP_POST: Data sent successfully[0m
+[0;32mI (88623) HTTP_POST: Data sent successfully[0m
+[0;32mI (88923) HTTP_POST: Data sent successfully[0m
+[0;32mI (89543) HTTP_POST: Data sent successfully[0m
+[0;32mI (89743) HTTP_POST: Data sent successfully[0m
+[0;32mI (89953) HTTP_POST: Data sent successfully[0m
+[0;32mI (90373) HTTP_POST: Data sent successfully[0m
+[0;32mI (90673) HTTP_POST: Data sent successfully[0m
+[0;32mI (90873) HTTP_POST: Data sent successfully[0m
+[0;32mI (91073) HTTP_POST: Data sent successfully[0m
+[0;32mI (91793) HTTP_POST: Data sent successfully[0m
+[0;32mI (92103) HTTP_POST: Data sent successfully[0m
+[0;32mI (92743) HTTP_POST: Data sent successfully[0m
+[0;32mI (93023) HTTP_POST: Data sent successfully[0m
+[0;32mI (93333) HTTP_POST: Data sent successfully[0m
+[0;32mI (94043) HTTP_POST: Data sent successfully[0m
+[0;32mI (94203) HTTP_POST: Data sent successfully[0m
+[0;32mI (94863) HTTP_POST: Data sent successfully[0m
+[0;32mI (95173) HTTP_POST: Data sent successfully[0m
+[0;32mI (95793) HTTP_POST: Data sent successfully[0m
+[0;32mI (96123) HTTP_POST: Data sent successfully[0m
+[0;32mI (96403) HTTP_POST: Data sent successfully[0m
+[0;32mI (96713) HTTP_POST: Data sent successfully[0m
+[0;32mI (97013) HTTP_POST: Data sent successfully[0m
+[0;32mI (97633) HTTP_POST: Data sent successfully[0m
+[0;32mI (98043) HTTP_POST: Data sent successfully[0m
+[0;32mI (98343) HTTP_POST: Data sent successfully[0m
+[0;32mI (98553) HTTP_POST: Data sent successfully[0m
+[0;32mI (98763) HTTP_POST: Data sent successfully[0m
+[0;32mI (99063) HTTP_POST: Data sent successfully[0m
+[0;32mI (99373) HTTP_POST: Data sent successfully[0m
+[0;32mI (99683) HTTP_POST: Data sent successfully[0m
+[0;32mI (99983) HTTP_POST: Data sent successfully[0m
+[0;32mI (100703) HTTP_POST: Data sent successfully[0m
+[0;32mI (101013) HTTP_POST: Data sent successfully[0m
+[0;32mI (101423) HTTP_POST: Data sent successfully[0m
+[0;32mI (101723) HTTP_POST: Data sent successfully[0m
+[0;32mI (102133) HTTP_POST: Data sent successfully[0m
+[0;32mI (102453) HTTP_POST: Data sent successfully[0m
+[0;32mI (102953) HTTP_POST: Data sent successfully[0m
+[0;32mI (103263) HTTP_POST: Data sent successfully[0m
+[0;32mI (103573) HTTP_POST: Data sent successfully[0m
+[0;32mI (103883) HTTP_POST: Data sent successfully[0m
+[0;32mI (104183) HTTP_POST: Data sent successfully[0m
+[0;32mI (104903) HTTP_POST: Data sent successfully[0m
+[0;32mI (105113) HTTP_POST: Data sent successfully[0m
+[0;32mI (105313) HTTP_POST: Data sent successfully[0m
+[0;32mI (105513) HTTP_POST: Data sent successfully[0m
+[0;32mI (106103) HTTP_POST: Data sent successfully[0m
+[0;32mI (106333) HTTP_POST: Data sent successfully[0m
+[0;32mI (106643) HTTP_POST: Data sent successfully[0m
+[0;32mI (106843) HTTP_POST: Data sent successfully[0m
+[0;32mI (107103) HTTP_POST: Data sent successfully[0m
+[0;32mI (107383) HTTP_POST: Data sent successfully[0m
+[0;32mI (107683) HTTP_POST: Data sent successfully[0m
+[0;32mI (108283) HTTP_POST: Data sent successfully[0m
+[0;32mI (108483) HTTP_POST: Data sent successfully[0m
+[0;32mI (108793) HTTP_POST: Data sent successfully[0m
+[0;32mI (109103) HTTP_POST: Data sent successfully[0m
+[0;32mI (109413) HTTP_POST: Data sent successfully[0m
+[0;32mI (109713) HTTP_POST: Data sent successfully[0m
+[0;32mI (110023) HTTP_POST: Data sent successfully[0m
+[0;32mI (110223) HTTP_POST: Data sent successfully[0m
+[0;32mI (110533) HTTP_POST: Data sent successfully[0m
+[0;32mI (110843) HTTP_POST: Data sent successfully[0m
+[0;32mI (111103) HTTP_POST: Data sent successfully[0m
+[0;32mI (111353) HTTP_POST: Data sent successfully[0m
+[0;32mI (111663) HTTP_POST: Data sent successfully[0m
+[0;32mI (112283) HTTP_POST: Data sent successfully[0m
+[0;32mI (112713) HTTP_POST: Data sent successfully[0m
+[0;32mI (112993) HTTP_POST: Data sent successfully[0m
+[0;32mI (113193) HTTP_POST: Data sent successfully[0m
+[0;32mI (113503) HTTP_POST: Data sent successfully[0m
+[0;32mI (114133) HTTP_POST: Data sent successfully[0m
+[0;32mI (114433) HTTP_POST: Data sent successfully[0m
+[0;32mI (114733) HTTP_POST: Data sent successfully[0m
+[0;32mI (115043) HTTP_POST: Data sent successfully[0m
+[0;32mI (115653) HTTP_POST: Data sent successfully[0m
+[0;32mI (115963) HTTP_POST: Data sent successfully[0m
+[0;32mI (116273) HTTP_POST: Data sent successfully[0m
+[0;32mI (116473) HTTP_POST: Data sent successfully[0m
+[0;32mI (116783) HTTP_POST: Data sent successfully[0m
+[0;32mI (117083) HTTP_POST: Data sent successfully[0m
+[0;32mI (117513) HTTP_POST: Data sent successfully[0m
+[0;32mI (117803) HTTP_POST: Data sent successfully[0m
+[0;32mI (118213) HTTP_POST: Data sent successfully[0m
+[0;32mI (118933) HTTP_POST: Data sent successfully[0m
+[0;32mI (119233) HTTP_POST: Data sent successfully[0m
+[0;32mI (119853) HTTP_POST: Data sent successfully[0m
+[0;32mI (120103) HTTP_POST: Data sent successfully[0m
+[0;32mI (120363) HTTP_POST: Data sent successfully[0m
+[0;32mI (120673) HTTP_POST: Data sent successfully[0m
+[0;32mI (120873) HTTP_POST: Data sent successfully[0m
+[0;32mI (121083) HTTP_POST: Data sent successfully[0m
+[0;32mI (121593) HTTP_POST: Data sent successfully[0m
+[0;32mI (122103) HTTP_POST: Data sent successfully[0m
+[0;32mI (122343) HTTP_POST: Data sent successfully[0m
+[0;32mI (122723) HTTP_POST: Data sent successfully[0m
+[0;32mI (123233) HTTP_POST: Data sent successfully[0m
+[0;32mI (124053) HTTP_POST: Data sent successfully[0m
+[0;32mI (124363) HTTP_POST: Data sent successfully[0m
+[0;32mI (124973) HTTP_POST: Data sent successfully[0m
+[0;32mI (125173) HTTP_POST: Data sent successfully[0m
+[0;32mI (125383) HTTP_POST: Data sent successfully[0m
+[0;32mI (125993) HTTP_POST: Data sent successfully[0m
+[0;32mI (126303) HTTP_POST: Data sent successfully[0m
+[0;32mI (126603) HTTP_POST: Data sent successfully[0m
+[0;32mI (126813) HTTP_POST: Data sent successfully[0m
+[0;32mI (127023) HTTP_POST: Data sent successfully[0m
+[0;32mI (127953) HTTP_POST: Data sent successfully[0m
+[0;32mI (128253) HTTP_POST: Data sent successfully[0m
+[0;32mI (128453) HTTP_POST: Data sent successfully[0m
+[0;32mI (128663) HTTP_POST: Data sent successfully[0m
+[0;32mI (128963) HTTP_POST: Data sent successfully[0m
+[0;32mI (129273) HTTP_POST: Data sent successfully[0m
+[0;32mI (129993) HTTP_POST: Data sent successfully[0m
+[0;32mI (130293) HTTP_POST: Data sent successfully[0m
+[0;32mI (130603) HTTP_POST: Data sent successfully[0m
+[0;32mI (130913) HTTP_POST: Data sent successfully[0m
+[0;32mI (131113) HTTP_POST: Data sent successfully[0m
+[0;32mI (131323) HTTP_POST: Data sent successfully[0m
+[0;32mI (131523) HTTP_POST: Data sent successfully[0m
+[0;32mI (132253) HTTP_POST: Data sent successfully[0m
+[0;32mI (132753) HTTP_POST: Data sent successfully[0m
+[0;32mI (133473) HTTP_POST: Data sent successfully[0m
+[0;32mI (133673) HTTP_POST: Data sent successfully[0m
+[0;32mI (133983) HTTP_POST: Data sent successfully[0m
+[0;32mI (134193) HTTP_POST: Data sent successfully[0m
+[0;32mI (134403) HTTP_POST: Data sent successfully[0m
+[0;32mI (134703) HTTP_POST: Data sent successfully[0m
+[0;32mI (135013) HTTP_POST: Data sent successfully[0m
+[0;32mI (135213) HTTP_POST: Data sent successfully[0m
+[0;32mI (135413) HTTP_POST: Data sent successfully[0m
+[0;32mI (135723) HTTP_POST: Data sent successfully[0m
+[0;32mI (135933) HTTP_POST: Data sent successfully[0m
+[0;32mI (136133) HTTP_POST: Data sent successfully[0m
+[0;32mI (136443) HTTP_POST: Data sent successfully[0m
+[0;32mI (136753) HTTP_POST: Data sent successfully[0m
+[0;32mI (137393) HTTP_POST: Data sent successfully[0m
+[0;32mI (137673) HTTP_POST: Data sent successfully[0m
+[0;32mI (138383) HTTP_POST: Data sent successfully[0m
+[0;32mI (138693) HTTP_POST: Data sent successfully[0m
+[0;32mI (139003) HTTP_POST: Data sent successfully[0m
+[0;32mI (139203) HTTP_POST: Data sent successfully[0m
+[0;32mI (139413) HTTP_POST: Data sent successfully[0m
+[0;32mI (139723) HTTP_POST: Data sent successfully[0m
+[0;32mI (140023) HTTP_POST: Data sent successfully[0m
+[0;32mI (140333) HTTP_POST: Data sent successfully[0m
+[0;32mI (140533) HTTP_POST: Data sent successfully[0m
+[0;32mI (140743) HTTP_POST: Data sent successfully[0m
+[0;32mI (140943) HTTP_POST: Data sent successfully[0m
+[0;32mI (141143) HTTP_POST: Data sent successfully[0m
+[0;32mI (141973) HTTP_POST: Data sent successfully[0m
+[0;32mI (142483) HTTP_POST: Data sent successfully[0m
+[0;32mI (142803) HTTP_POST: Data sent successfully[0m
+[0;32mI (143103) HTTP_POST: Data sent successfully[0m
+[0;32mI (143403) HTTP_POST: Data sent successfully[0m
+[0;32mI (143613) HTTP_POST: Data sent successfully[0m
+[0;32mI (143913) HTTP_POST: Data sent successfully[0m
+[0;32mI (144103) HTTP_POST: Data sent successfully[0m
+[0;32mI (144433) HTTP_POST: Data sent successfully[0m
+[0;32mI (144733) HTTP_POST: Data sent successfully[0m
+[0;32mI (144943) HTTP_POST: Data sent successfully[0m
+[0;32mI (145143) HTTP_POST: Data sent successfully[0m
+[0;32mI (145353) HTTP_POST: Data sent successfully[0m
+[0;32mI (145663) HTTP_POST: Data sent successfully[0m
+[0;32mI (145963) HTTP_POST: Data sent successfully[0m
+[0;32mI (146273) HTTP_POST: Data sent successfully[0m
+[0;32mI (146483) HTTP_POST: Data sent successfully[0m
+[0;32mI (146993) HTTP_POST: Data sent successfully[0m
+[0;32mI (148013) HTTP_POST: Data sent successfully[0m
+[0;32mI (148223) HTTP_POST: Data sent successfully[0m
+[0;32mI (148523) HTTP_POST: Data sent successfully[0m
+[0;32mI (148733) HTTP_POST: Data sent successfully[0m
+[0;32mI (148933) HTTP_POST: Data sent successfully[0m
+[0;32mI (149453) HTTP_POST: Data sent successfully[0m
+[0;32mI (149653) HTTP_POST: Data sent successfully[0m
+[0;32mI (149813) HTTP_POST: Data sent successfully[0m
+[0;32mI (150063) HTTP_POST: Data sent successfully[0m
+[0;32mI (150673) HTTP_POST: Data sent successfully[0m
+[0;32mI (150983) HTTP_POST: Data sent successfully[0m
+[0;32mI (151293) HTTP_POST: Data sent successfully[0m
+[0;32mI (151593) HTTP_POST: Data sent successfully[0m
+[0;32mI (151903) HTTP_POST: Data sent successfully[0m
+[0;32mI (152103) HTTP_POST: Data sent successfully[0m
+[0;32mI (152463) HTTP_POST: Data sent successfully[0m
+[0;32mI (153033) HTTP_POST: Data sent successfully[0m
+[0;32mI (153343) HTTP_POST: Data sent successfully[0m
+[0;32mI (153953) HTTP_POST: Data sent successfully[0m
+[0;32mI (154263) HTTP_POST: Data sent successfully[0m
+[0;32mI (154563) HTTP_POST: Data sent successfully[0m
+[0;32mI (154773) HTTP_POST: Data sent successfully[0m
+[0;32mI (155083) HTTP_POST: Data sent successfully[0m
+[0;32mI (155383) HTTP_POST: Data sent successfully[0m
+[0;32mI (155693) HTTP_POST: Data sent successfully[0m
+[0;32mI (156323) HTTP_POST: Data sent successfully[0m
+[0;32mI (156923) HTTP_POST: Data sent successfully[0m
+[0;32mI (157543) HTTP_POST: Data sent successfully[0m
+[0;32mI (158063) HTTP_POST: Data sent successfully[0m
+[0;32mI (158353) HTTP_POST: Data sent successfully[0m
+[0;32mI (158663) HTTP_POST: Data sent successfully[0m
+[0;32mI (158973) HTTP_POST: Data sent successfully[0m
+[0;32mI (159143) HTTP_POST: Data sent successfully[0m
+[0;32mI (159383) HTTP_POST: Data sent successfully[0m
+[0;32mI (159683) HTTP_POST: Data sent successfully[0m
+[0;32mI (159993) HTTP_POST: Data sent successfully[0m
+[0;32mI (160303) HTTP_POST: Data sent successfully[0m
+[0;32mI (161023) HTTP_POST: Data sent successfully[0m
+[0;32mI (161533) HTTP_POST: Data sent successfully[0m
+[0;32mI (161833) HTTP_POST: Data sent successfully[0m
+[0;32mI (162353) HTTP_POST: Data sent successfully[0m
+[0;32mI (163173) HTTP_POST: Data sent successfully[0m
+[0;32mI (163683) HTTP_POST: Data sent successfully[0m
+[0;32mI (163883) HTTP_POST: Data sent successfully[0m
+[0;32mI (164093) HTTP_POST: Data sent successfully[0m
+[0;32mI (164293) HTTP_POST: Data sent successfully[0m
+[0;32mI (164603) HTTP_POST: Data sent successfully[0m
+[0;32mI (164913) HTTP_POST: Data sent successfully[0m
+[0;32mI (165123) HTTP_POST: Data sent successfully[0m
+[0;32mI (165423) HTTP_POST: Data sent successfully[0m
+[0;32mI (165733) HTTP_POST: Data sent successfully[0m
+[0;32mI (165943) HTTP_POST: Data sent successfully[0m
+[0;32mI (166243) HTTP_POST: Data sent successfully[0m
+[0;32mI (166563) HTTP_POST: Data sent successfully[0m
+[0;32mI (168293) HTTP_POST: Data sent successfully[0m
+[0;32mI (169103) HTTP_POST: Data sent successfully[0m
+[0;32mI (169413) HTTP_POST: Data sent successfully[0m
+[0;32mI (169723) HTTP_POST: Data sent successfully[0m
+[0;32mI (169923) HTTP_POST: Data sent successfully[0m
+[0;32mI (170133) HTTP_POST: Data sent successfully[0m
+[0;32mI (170333) HTTP_POST: Data sent successfully[0m
+[0;32mI (170953) HTTP_POST: Data sent successfully[0m
+[0;32mI (171263) HTTP_POST: Data sent successfully[0m
+[0;32mI (171463) HTTP_POST: Data sent successfully[0m
+[0;32mI (171673) HTTP_POST: Data sent successfully[0m
+[0;32mI (172393) HTTP_POST: Data sent successfully[0m
+[0;32mI (173003) HTTP_POST: Data sent successfully[0m
+[0;32mI (173303) HTTP_POST: Data sent successfully[0m
+[0;32mI (173613) HTTP_POST: Data sent successfully[0m
+[0;32mI (173923) HTTP_POST: Data sent successfully[0m
+[0;32mI (174123) HTTP_POST: Data sent successfully[0m
+[0;32mI (174333) HTTP_POST: Data sent successfully[0m
+[0;32mI (174643) HTTP_POST: Data sent successfully[0m
+[0;32mI (175043) HTTP_POST: Data sent successfully[0m
+[0;32mI (175253) HTTP_POST: Data sent successfully[0m
+[0;32mI (175563) HTTP_POST: Data sent successfully[0m
+[0;32mI (175863) HTTP_POST: Data sent successfully[0m
+[0;32mI (176383) HTTP_POST: Data sent successfully[0m
+[0;32mI (176683) HTTP_POST: Data sent successfully[0m
+[0;32mI (176993) HTTP_POST: Data sent successfully[0m
+[0;32mI (177303) HTTP_POST: Data sent successfully[0m
+[0;32mI (177813) HTTP_POST: Data sent successfully[0m
+[0;32mI (178173) HTTP_POST: Data sent successfully[0m
+[0;32mI (178633) HTTP_POST: Data sent successfully[0m
+[0;32mI (178833) HTTP_POST: Data sent successfully[0m
+[0;32mI (179143) HTTP_POST: Data sent successfully[0m
+[0;32mI (179353) HTTP_POST: Data sent successfully[0m
+[0;32mI (179553) HTTP_POST: Data sent successfully[0m
+[0;32mI (179863) HTTP_POST: Data sent successfully[0m
+[0;32mI (180103) HTTP_POST: Data sent successfully[0m
+[0;32mI (180373) HTTP_POST: Data sent successfully[0m
+[0;32mI (180683) HTTP_POST: Data sent successfully[0m
+[0;32mI (181193) HTTP_POST: Data sent successfully[0m
+[0;32mI (181503) HTTP_POST: Data sent successfully[0m

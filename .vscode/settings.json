@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "adc.h": "c",
+        "wifi.h": "c",
+        "thingsboard.h": "c",
+        "queueservice.h": "c"
+    }
+}

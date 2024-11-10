@@ -1,0 +1,43 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32
+Using component placed at /home/mung/esp/esp-idf/examples/common_components/protocol_examples_common for dependency "protocol_examples_common", specified in /home/mung/Documents/datn/http_request/main/idf_component.yml
+Processing 2 dependencies:
+[1/2] protocol_examples_common (*) (/home/mung/esp/esp-idf/examples/common_components/protocol_examples_common)
+[2/2] idf (5.2.3)
+-- Project sdkconfig file /home/mung/Documents/datn/http_request/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "http_request" version: 634666d-dirty
+-- Adding linker script /home/mung/Documents/datn/http_request/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/mung/Documents/datn/http_request/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/mung/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/mung/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/mung/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/mung/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/mung/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/mung/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/mung/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocol_examples_common protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/mung/esp/esp-idf/components/app_trace /home/mung/esp/esp-idf/components/app_update /home/mung/esp/esp-idf/components/bootloader /home/mung/esp/esp-idf/components/bootloader_support /home/mung/esp/esp-idf/components/bt /home/mung/esp/esp-idf/components/cmock /home/mung/esp/esp-idf/components/console /home/mung/esp/esp-idf/components/cxx /home/mung/esp/esp-idf/components/driver /home/mung/esp/esp-idf/components/efuse /home/mung/esp/esp-idf/components/esp-tls /home/mung/esp/esp-idf/components/esp_adc /home/mung/esp/esp-idf/components/esp_app_format /home/mung/esp/esp-idf/components/esp_bootloader_format /home/mung/esp/esp-idf/components/esp_coex /home/mung/esp/esp-idf/components/esp_common /home/mung/esp/esp-idf/components/esp_eth /home/mung/esp/esp-idf/components/esp_event /home/mung/esp/esp-idf/components/esp_gdbstub /home/mung/esp/esp-idf/components/esp_hid /home/mung/esp/esp-idf/components/esp_http_client /home/mung/esp/esp-idf/components/esp_http_server /home/mung/esp/esp-idf/components/esp_https_ota /home/mung/esp/esp-idf/components/esp_https_server /home/mung/esp/esp-idf/components/esp_hw_support /home/mung/esp/esp-idf/components/esp_lcd /home/mung/esp/esp-idf/components/esp_local_ctrl /home/mung/esp/esp-idf/components/esp_mm /home/mung/esp/esp-idf/components/esp_netif /home/mung/esp/esp-idf/components/esp_netif_stack /home/mung/esp/esp-idf/components/esp_partition /home/mung/esp/esp-idf/components/esp_phy /home/mung/esp/esp-idf/components/esp_pm /home/mung/esp/esp-idf/components/esp_psram /home/mung/esp/esp-idf/components/esp_ringbuf /home/mung/esp/esp-idf/components/esp_rom /home/mung/esp/esp-idf/components/esp_system /home/mung/esp/esp-idf/components/esp_timer /home/mung/esp/esp-idf/components/esp_wifi /home/mung/esp/esp-idf/components/espcoredump /home/mung/esp/esp-idf/components/esptool_py /home/mung/esp/esp-idf/components/fatfs /home/mung/esp/esp-idf/components/freertos /home/mung/esp/esp-idf/components/hal /home/mung/esp/esp-idf/components/heap /home/mung/esp/esp-idf/components/http_parser /home/mung/esp/esp-idf/components/idf_test /home/mung/esp/esp-idf/components/ieee802154 /home/mung/esp/esp-idf/components/json /home/mung/esp/esp-idf/components/log /home/mung/esp/esp-idf/components/lwip /home/mung/Documents/datn/http_request/main /home/mung/esp/esp-idf/components/mbedtls /home/mung/esp/esp-idf/components/mqtt /home/mung/esp/esp-idf/components/newlib /home/mung/esp/esp-idf/components/nvs_flash /home/mung/esp/esp-idf/components/nvs_sec_provider /home/mung/esp/esp-idf/components/openthread /home/mung/esp/esp-idf/components/partition_table /home/mung/esp/esp-idf/components/perfmon /home/mung/esp/esp-idf/components/protobuf-c /home/mung/esp/esp-idf/examples/common_components/protocol_examples_common /home/mung/esp/esp-idf/components/protocomm /home/mung/esp/esp-idf/components/pthread /home/mung/esp/esp-idf/components/sdmmc /home/mung/esp/esp-idf/components/soc /home/mung/esp/esp-idf/components/spi_flash /home/mung/esp/esp-idf/components/spiffs /home/mung/esp/esp-idf/components/tcp_transport /home/mung/esp/esp-idf/components/ulp /home/mung/esp/esp-idf/components/unity /home/mung/esp/esp-idf/components/usb /home/mung/esp/esp-idf/components/vfs /home/mung/esp/esp-idf/components/wear_levelling /home/mung/esp/esp-idf/components/wifi_provisioning /home/mung/esp/esp-idf/components/wpa_supplicant /home/mung/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/mung/Documents/datn/http_request/build
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/mung/Documents/datn/http_request/build/bootloader/esp-idf/esptool_py && /home/mung/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/mung/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/mung/Documents/datn/http_request/build/bootloader/bootloader.bin
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from /home/mung/Documents/datn/http_request/lib/adc.h:6,
+                 from /home/mung/Documents/datn/http_request/main/main.c:4:
+/home/mung/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable http_request.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/mung/Documents/datn/http_request/build/http_request.bin
+[7/7] cd /home/mung/Documents/datn/http_request/build/esp-idf/esptool_py && /home/mung/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/mung/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/mung/Documents/datn/http_request/build/partition_table/partition-table.bin /home/mung/Documents/datn/http_request/build/http_request.bin
+http_request.bin binary size 0xe3bb0 bytes. Smallest app partition is 0x100000 bytes. 0x1c450 bytes (11%) free.

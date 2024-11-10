@@ -10,13 +10,18 @@
 #include "freertos/FreeRTOS.h"  // For FreeRTOS types and macros
 #include "freertos/task.h"      // For vTaskDelay
 #include "Timestamp.h"
+#include "queueService.h"  // Thêm dòng này để kết nối với queueService.h
 
 #define TAG_JSON "ADC_JSON"
-#define NUM_READINGS 20  // Number of readings to take per ADC channel
+
+
+
+
+extern QueueHandle_t queue;  // Đảm bảo khai báo queue đúng cách
 
 void init_adc();
-void read_adc_values(int adc_values[5][NUM_READINGS]);
-char *create_json_body(int adc_values[5][NUM_READINGS]);
-void print_adc_values();
+char *createJsonBody(int64_t timestamp, char *label, int adc_vol[100]);
+void adc_task(void *pvParameters);
+void print_task(void *pvParameters);  // Khai báo task để in dữ liệu
 
 #endif
